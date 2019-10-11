@@ -21,7 +21,14 @@
 
 LOCK TABLES `books` WRITE;
 /*!40000 ALTER TABLE `books` DISABLE KEYS */;
-INSERT INTO `books` VALUES (1,'2002-10-25','978-0135974445',1.99,'Prentice-Hall','Agile Software Development'),(2,'2002-11-25','978-0321127426',2.49,'Addison-Wesley','Patterns of Enterprise Application Architecture'),(3,'2018-08-27','978-0135166307',1.75,'Pearson','Core Java - Fundamentals, 12th Edition'),(4,'2011-05-19','978-0073523323',1.47,'McGraw-Hill','Database Systems Concepts, 6th Edition'),(9,'2010-09-24','978-1234567890',0.99,'Manning','Spring In Action'),(10,'2018-03-16','978-0000001112',1.86,'John Wiley','UML Distilled, 3rd Edition'),(11,NULL,'123-1234567890',1320,'','Some New Book Title');
+INSERT INTO `elibrary-democrud-db`.`books` (date_published, isbn, overdue_fee, publisher, title) VALUES ('2002-10-25','978-0135974445',1.99,'Prentice-Hall','Agile Software Development');
+INSERT INTO `elibrary-democrud-db`.`books` (date_published, isbn, overdue_fee, publisher, title) VALUES ('2002-11-25','978-0321127426',2.49,'Addison-Wesley','Patterns of Enterprise Application Architecture');
+INSERT INTO `elibrary-democrud-db`.`books` (date_published, isbn, overdue_fee, publisher, title) VALUES ('2018-08-27','978-0135166307',1.75,'Pearson','Core Java - Fundamentals, 12th Edition');
+INSERT INTO `elibrary-democrud-db`.`books` (date_published, isbn, overdue_fee, publisher, title) VALUES ('2011-05-19','978-0073523323',1.47,'McGraw-Hill','Database Systems Concepts, 6th Edition');
+INSERT INTO `elibrary-democrud-db`.`books` (date_published, isbn, overdue_fee, publisher, title) VALUES ('2010-09-24','978-1234567890',0.99,'Manning','Spring In Action');
+INSERT INTO `elibrary-democrud-db`.`books` (date_published, isbn, overdue_fee, publisher, title) VALUES ('2018-03-16','978-0000001112',1.86,'John Wiley','UML Distilled, 3rd Edition');
+INSERT INTO `elibrary-democrud-db`.`books` (date_published, isbn, overdue_fee, publisher, title) VALUES (NULL,'123-1234567890',1320,'','Some New Book Title');
+
 /*!40000 ALTER TABLE `books` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
