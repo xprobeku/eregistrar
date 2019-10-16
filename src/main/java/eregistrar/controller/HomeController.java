@@ -1,4 +1,4 @@
-package edu.mum.cs.cs425.demos.elibrarydemocrudweb.controller;
+package eregistrar.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-    @GetMapping(value = {"/elibrary", "/elibrary/home"})
+    @GetMapping(value = {"/", "/home"})
     public String home() {
         return "home/index";
     }
